@@ -1,1 +1,1 @@
-# Insurance-Premuim-Prediction
+# Insurance-Premium-Prediction
