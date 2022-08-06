@@ -1,6 +1,6 @@
 ## Insurance-Premium-Prediction 
 Application url:
-[Insurance Premium Prediction]()
+[Insurance Premium Prediction](https://premium-pred-app.herokuapp.com/)
 
 ### Problem Statement : 
 The goal of this project is to give people an estimate of how much they need based on
