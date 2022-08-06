@@ -2,10 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+saved_models/*
 
 # C extensions
 *.so
-
+premium/artifact
 # Distribution / packaging
 .Python
 build/
