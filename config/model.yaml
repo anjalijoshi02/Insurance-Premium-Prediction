@@ -18,10 +18,35 @@ model_selection:
     class: RandomForestRegressor
     module: sklearn.ensemble
     params:
-      min_samples_leaf: 3
+      min_samples_leaf: 2
     search_param_grid:
       min_samples_leaf:
         - 2
         - 3
-    
+      n_estimators:
+        - 100
+        - 200
+        - 300
+      criterion:
+        - squared_error
+        - absolute_error
+        - poisson
+      oob_score:
+        - true
+        - false
+    module_3:
+    class: SVR
+    module: sklearn.svm
+    params:
+      degree: 3
+    search_param_grid:
+      kernel:
+        - rbf
+        - linear
+        - poly
+        - sigmoid
+      epsilon:
+        - 0.1
+        - 0.01
+        - 0.5
 

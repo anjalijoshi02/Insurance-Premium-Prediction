@@ -1,5 +1,5 @@
 from setuptools import find_packages, setup
-from typing import List # all the dadatypes are from typing module only
+from typing import List 
 
 # Declaring variables for setup function
 PROJECT_NAME="premium-predictor"

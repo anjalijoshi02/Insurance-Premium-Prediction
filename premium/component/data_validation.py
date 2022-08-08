@@ -16,7 +16,7 @@ class DataValidation:
                  data_validation_config:DataValidationConfig) -> None:
 
         try:
-            logging.info(f"{'='*30}Data Valdaition log started.{'='*30} \n")
+            logging.info(f"{'>'*30}Data Valdaition log started.{'<'*30} \n")
             self.data_ingestion_artifact = data_ingestion_artifact
             self.data_validation_config = data_validation_config
         
@@ -36,7 +36,7 @@ class DataValidation:
 
     def is_train_test_file_exist(self) -> bool:
         try:
-            logging.info("Checking if training and test file is available")
+            logging.info("Checking if training and test files are available")
             is_train_file_exist = False
             is_test_file_exist = False
 

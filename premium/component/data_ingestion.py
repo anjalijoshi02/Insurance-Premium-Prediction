@@ -80,7 +80,7 @@ class DataIngestion:
             strat_train_set = None
             strat_test_set = None
 
-            split = StratifiedShuffleSplit(n_splits=1, test_size = 0.3, random_state=42)
+            split = StratifiedShuffleSplit(n_splits=1, test_size = 0.2, random_state=0)
 
             for train_index,test_index in split.split(premium_data_frame, premium_data_frame["bmi_category"]):
                 strat_train_set = premium_data_frame.loc[train_index].drop(["bmi_category"],axis=1)
@@ -91,12 +91,12 @@ class DataIngestion:
 
             if strat_train_set is not None:
                 os.makedirs(self.data_ingestion_config.ingested_train_dir, exist_ok=True)
-                logging.info(f"Exporting training datset to file: [{train_file_path}]")
+                logging.info(f"Exporting training dataset to the file: [{train_file_path}]")
                 strat_train_set.to_csv(train_file_path,index=False)
 
             if strat_test_set is not None:
                 os.makedirs(self.data_ingestion_config.ingested_test_dir, exist_ok= True)
-                logging.info(f"Exporting test dataset to file: [{test_file_path}]")
+                logging.info(f"Exporting test dataset to the file: [{test_file_path}]")
                 strat_test_set.to_csv(test_file_path,index=False)
 
             data_ingestion_artifact = DataIngestionArtifact(

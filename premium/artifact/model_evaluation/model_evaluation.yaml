@@ -1,2 +1,5 @@
 best_model:
-  model_path: C:\project\Insurance-Premium-Prediction\premium\artifact\model_trainer\2022-08-06-12-39-35\trained_model\model.pkl
+  model_path: C:\project\Insurance-Premium-Prediction\premium\artifact\model_trainer\2022-08-07-19-41-18\trained_model\model.pkl
+history:
+  2022-08-07-19-41-18:
+    model_path: C:\project\Insurance-Premium-Prediction\premium\artifact\model_trainer\2022-08-06-12-39-35\trained_model\model.pkl
