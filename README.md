@@ -37,7 +37,7 @@ Then the accuracy was being tested on test dataset .
 The model that performed was being chosen for further predictions.
 
 
-#### Webbpage and Deployment:
+#### Webpage and Deployment:
  Created a web application that takes all the necessary inputs from the user & shows the output. Then deployed project on the Heroku Platform.
 
 
